@@ -16,3 +16,7 @@ cd openwrt/package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 cd ../..
+cd ./feeds/luci/collections/luci
+rm Makefile
+wget https://raw.githubusercontent.com/GreyFlorence/OpenWrt_Newifi_D2_firmware/main/Makefile
+cd ../../../..
